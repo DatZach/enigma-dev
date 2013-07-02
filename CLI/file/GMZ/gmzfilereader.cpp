@@ -23,7 +23,7 @@
 * with this code. If not, see <http://www.gnu.org/licenses/>
 **/
 
-#include <zip.h>
+//#include <zip.h>
 
 #include "gmzfilereader.h"
 #include "printcolors.h"

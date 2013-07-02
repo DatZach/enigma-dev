@@ -41,19 +41,6 @@ struct GMKFile
     ifstream file;
 
     EnigmaStruct* load(char* path);
-    void readSprites();
-    void readSounds();
-    void readBackgrounds();
-    void readPaths();
-    void readScripts();
-    void readFonts();
-    void readTimelines();
-    void readObjects();
-    void readRooms();
-    void readGameSettings();
-    void readGameInfo();
-    void readGameExtensions();
-
 };
 
 #endif // GMKFILEREADER_H_INCLUDED

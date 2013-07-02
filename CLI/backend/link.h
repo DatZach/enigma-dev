@@ -33,7 +33,14 @@ using namespace std;
 #include "backend/EnigmaStruct.h"
 #include "backend/JavaCallbacks.h"
 #include "syntax_error.h"
-#include <dlfcn.h>
+
+#if CURRENT_PLATFORM_ID == OS_WINDOWS
+#undef byte
+#undef boolean
+	#include <Windows.h>
+#else
+	#include <dlfcn.h>
+#endif
 
 extern int (*compileEGMf)(EnigmaStruct *es, const char* exe_filename, int mode);
 extern const char* (*next_available_resource)();
